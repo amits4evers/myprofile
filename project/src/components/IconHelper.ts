@@ -1,0 +1,45 @@
+import * as Icons from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+
+export function getIcon(name: string): LucideIcon {
+  const iconMap: Record<string, LucideIcon> = {
+    Map: Icons.Map,
+    FileSpreadsheet: Icons.FileSpreadsheet,
+    BarChart3: Icons.BarChart3,
+    Code2: Icons.Code2,
+    Database: Icons.Database,
+    Globe: Icons.Globe,
+    Table: Icons.Table,
+    LayoutDashboard: Icons.LayoutDashboard,
+    Calculator: Icons.Calculator,
+    ChartArea: Icons.ChartArea,
+    Sparkles: Icons.Sparkles,
+    Download: Icons.Download,
+    Search: Icons.Search,
+    Wand2: Icons.Wand2,
+    Wrench: Icons.Wrench,
+    ChartColumn: Icons.ChartColumn,
+    ShoppingCart: Icons.ShoppingCart,
+    Activity: Icons.Activity,
+    TrendingUp: Icons.TrendingUp,
+    CloudSun: Icons.CloudSun,
+    Users: Icons.Users,
+    Film: Icons.Film,
+    Briefcase: Icons.Briefcase,
+    CreditCard: Icons.CreditCard,
+    Trophy: Icons.Trophy,
+    FolderGit2: Icons.FolderGit2,
+    Upload: Icons.Upload,
+    Server: Icons.Server,
+    MonitorCog: Icons.MonitorCog,
+    ShieldAlert: Icons.ShieldAlert,
+    Gauge: Icons.Gauge,
+    Network: Icons.Network,
+    Eye: Icons.Eye,
+    TrafficCone: Icons.TrafficCone,
+    Landmark: Icons.Landmark,
+    FileWarning: Icons.FileWarning,
+    PieChart: Icons.PieChart,
+  };
+  return iconMap[name] || Icons.BookOpen;
+}
